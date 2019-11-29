@@ -21,24 +21,8 @@ public class Main {
         System.out.print("]");
         System.out.println();
 
-        ArrayList<String> carBreands = new ArrayList<>();
-        carBreands.add("Mersedes");
-        carBreands.add("BMW");
-        carBreands.add("Audi");
-        carBreands.add("Ford");
-        carBreands.add("Toyota");
-        carBreands.add("Nissan");
-        carBreands.add("Lada");
-        System.out.println("This is the second array");
-        System.out.print("[ ");
-        for (String carBreand : carBreands) {
-            System.out.print(carBreand + " , ");
-        }
-        System.out.println("]");
-        System.out.println();
-
-        ArrayList<String> concatArrays = new ArrayList<>(continents);
-        concatArrays.addAll(carBreands);
-        System.out.println(concatArrays);
+        System.out.println("And this is an empty array");
+        continents.clear();
+        System.out.println(continents);
     }
 }
