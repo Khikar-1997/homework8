@@ -1,7 +1,6 @@
 package com.company;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
 public class Main {
 
@@ -16,18 +15,30 @@ public class Main {
         continents.add("Australia");
         System.out.println("This is the first array");
         System.out.print("[ ");
-        for (int i = 0; i < continents.size(); i++) {
-            System.out.print(continents.get(i) + " , ");
+        for (String continent : continents) {
+            System.out.print(continent + " , ");
         }
         System.out.print("]");
         System.out.println();
 
-        System.out.println("And this is an reverse array");
+        ArrayList<String> carBreands = new ArrayList<>();
+        carBreands.add("Mersedes");
+        carBreands.add("BMW");
+        carBreands.add("Audi");
+        carBreands.add("Ford");
+        carBreands.add("Toyota");
+        carBreands.add("Nissan");
+        carBreands.add("Lada");
+        System.out.println("This is the second array");
         System.out.print("[ ");
-        for (int i = 0; i < continents.size(); i++) {
-            Collections.reverse(continents);
-            System.out.print(continents.get(i) + " , ");
+        for (String carBreand : carBreands) {
+            System.out.print(carBreand + " , ");
         }
-        System.out.print("]");
+        System.out.println("]");
+        System.out.println();
+
+        ArrayList<String> concatArrays = new ArrayList<>(continents);
+        concatArrays.addAll(carBreands);
+        System.out.println(concatArrays);
     }
 }
