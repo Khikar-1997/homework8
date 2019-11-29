@@ -5,25 +5,24 @@ import java.util.ArrayList;
 public class Main {
 
     public static void main(String[] args) {
-        ArrayList<String> dogBreeds = new ArrayList<>();
-        dogBreeds.add("Rottweiler");
-        dogBreeds.add("Tibetan mastiff");
-        dogBreeds.add("Engelse mastiff");
-        dogBreeds.add("Chau chau");
-        dogBreeds.add("German shepherd");
+        ArrayList<String> continents = new ArrayList<>();
+        continents.add("North America");
+        continents.add("Europe");
+        continents.add("Asia");
+        continents.add("Africa");
+        continents.add("Sout America");
+        continents.add("Antarctica");
+        continents.add("Australia");
         System.out.println("This is the first array");
         System.out.print("[ ");
-        for (int i = 0; i < dogBreeds.size(); i++) {
-            System.out.print(dogBreeds.get(i) + " , ");
+        for (int i = 0; i < continents.size(); i++) {
+            System.out.print(continents.get(i) + " , ");
         }
         System.out.print("]");
+
         System.out.println();
-        dogBreeds.remove(2);
-        System.out.println("And this is an array with an extracted element ");
-        System.out.print("[ ");
-        for (int i = 0; i < dogBreeds.size(); i++) {
-            System.out.print(dogBreeds.get(i) + " , ");
-        }
-        System.out.print("]");
+        System.out.println("And this is an  copyed array");
+        ArrayList<String> copyContinents = new ArrayList<String>(continents);
+        System.out.println(copyContinents);
     }
 }
