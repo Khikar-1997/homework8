@@ -48,14 +48,14 @@ public class Main {
 
         ArrayList<Hospital> hospitals = new ArrayList<>();
         hospitals.add(hospital);
-        ArrayList<Director> directors = new ArrayList<>();
+        ArrayList<Human> directors = new ArrayList<>();
         directors.add(director);
-        ArrayList<Doctors> doctors = new ArrayList<>();
+        ArrayList<Human> doctors = new ArrayList<>();
         doctors.add(doctor);
         doctors.add(doctor2);
         doctors.add(doctor3);
         doctors.add(doctor4);
-        ArrayList<Patients> patients = new ArrayList<>();
+        ArrayList<Human> patients = new ArrayList<>();
         patients.add(patient);
         patients.add(patient2);
         patients.add(patient3);
