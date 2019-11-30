@@ -3,30 +3,30 @@ package com.company;
 import java.util.ArrayList;
 
 public class Animal {
-    private String dogBreed;
-    ArrayList<String> dogs;
+    private String catBreed;
+    ArrayList<String> cats;
 
-    public Animal(String dogBreed, ArrayList<String> dogs) {
-        this.dogBreed = dogBreed;
-        this.dogs = dogs;
+    public Animal(String catBreed, ArrayList<String> cats) {
+        this.catBreed = catBreed;
+        this.cats = cats;
     }
 
     public Animal() {
     }
 
-    public String getDogBreed() {
-        return dogBreed;
+    public String getCatBreed() {
+        return catBreed;
     }
 
-    public void setDogBreed(String dogBreed) {
-        this.dogBreed = dogBreed;
+    public void setCatBreed(String catBreed) {
+        this.catBreed = catBreed;
     }
 
-    public ArrayList<String> getDogs() {
-        return dogs;
+    public ArrayList<String> getCats() {
+        return cats;
     }
 
-    public void setDogs(ArrayList<String> dogs) {
-        this.dogs = dogs;
+    public void setCats(ArrayList<String> cats) {
+        this.cats = cats;
     }
 }
