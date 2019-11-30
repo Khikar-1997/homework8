@@ -5,25 +5,32 @@ import java.util.ArrayList;
 public class Main {
 
     public static void main(String[] args) {
-        ArrayList<Integer> numbers = new ArrayList<>();
-        int[] arraynumbers = new int[10];
-        System.out.println("This is the first array");
-        System.out.print("[ ");
-        for (int i = 0; i < arraynumbers.length; i++) {
-            arraynumbers[i] = i;
-            numbers.add(arraynumbers[i]);
-            System.out.print(numbers.get(i) + " , ");
-        }
-        System.out.println("]");
+        Dog dog = new Dog();
+        dog.setName(" - Rex");
+        dog.setDogBreed("German shepherd");
 
+        Dog dog2 = new Dog();
+        dog2.setDogBreed("Chau chau");
+        dog2.setName(" - Dingo");
+
+        Dog dog3 = new Dog();
+        dog3.setDogBreed("Tibetan mastiff");
+        dog3.setName(" - Vulkan");
+
+        Dog dog4 = new Dog();
+        dog4.setDogBreed("Labrador retriever");
+        dog4.setName(" - Jorj");
+
+        ArrayList<Dog> dogs = new ArrayList<>();
+        dogs.add(dog);
+        dogs.add(dog2);
+        dogs.add(dog3);
+        dogs.add(dog4);
+
+        System.out.println("The dogs breeds and there names:");
         System.out.println();
-        System.out.println("And this is an array with odd numbers");
-        System.out.print("[ ");
-        for (int i = 0; i < numbers.size(); i++) {
-            if (numbers.get(i) % 2 != 0) {
-                System.out.print(numbers.get(i) + " , ");
-            }
+        for (int i = 0; i < dogs.size(); i++) {
+            System.out.println(dogs.get(i).getDogBreed() + dogs.get(i).getName() + " , ");
         }
-        System.out.print("]");
     }
 }
