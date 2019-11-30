@@ -6,28 +6,38 @@ public class Main {
 
     public static void main(String[] args) {
         Cat cat = new Cat();
-        cat.setCatBreed("Persian cat");
+        cat.setAnimalBreed("Persian cat");
         cat.setName(" - Smokey");
 
         Cat cat2 = new Cat();
-        cat2.setCatBreed("Maikun");
+        cat2.setAnimalBreed("Maikun");
         cat2.setName(" - Lucky");
 
         Cat cat3 = new Cat();
-        cat3.setCatBreed("Siamese cat");
+        cat3.setAnimalBreed("Siamese cat");
         cat3.setName(" - Oreo");
 
         Cat cat4 = new Cat();
-        cat4.setCatBreed("Ragdoll");
+        cat4.setAnimalBreed("Ragdoll");
         cat4.setName(" - Patch");
 
-        ArrayList<Cat> cats = new ArrayList<>();
-        cats.add(cat);
-        cats.add(cat2);
-        cats.add(cat3);
-        cats.add(cat4);
-        for (int i = 0; i < cats.size(); i++) {
-            System.out.println(cats.get(i).getCatBreed() + cats.get(i).getName() + ", ");
+        Dog dog = new Dog();
+        dog.setAnimalBreed("Chau chau");
+        dog.setName(" - Archy");
+
+        Dog dog2 = new Dog();
+        dog2.setAnimalBreed("Pitbul");
+        dog2.setName(" - Graf");
+
+        ArrayList<Animal> animals = new ArrayList<>();
+        animals.add(cat);
+        animals.add(cat2);
+        animals.add(cat3);
+        animals.add(cat4);
+        animals.add(dog);
+        animals.add(dog2);
+        for (int i = 0; i < animals.size(); i++) {
+            System.out.println(animals.get(i).getAnimalBreed() + animals.get(i).getName());
         }
     }
 }

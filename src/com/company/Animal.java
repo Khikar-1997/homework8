@@ -3,30 +3,42 @@ package com.company;
 import java.util.ArrayList;
 
 public class Animal {
-    private String catBreed;
-    ArrayList<String> cats;
+    private String name;
+    private String animalBreed;
+    ArrayList<String> animals;
 
-    public Animal(String catBreed, ArrayList<String> cats) {
-        this.catBreed = catBreed;
-        this.cats = cats;
+    public Animal(String name, String animalBreed, ArrayList<String> animals) {
+        this.name = name;
+        this.animalBreed = animalBreed;
+        this.animals = animals;
     }
 
     public Animal() {
     }
 
-    public String getCatBreed() {
-        return catBreed;
+    //region Getter and setter
+    public String getName() {
+        return name;
     }
 
-    public void setCatBreed(String catBreed) {
-        this.catBreed = catBreed;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public ArrayList<String> getCats() {
-        return cats;
+    public String getAnimalBreed() {
+        return animalBreed;
     }
 
-    public void setCats(ArrayList<String> cats) {
-        this.cats = cats;
+    public void setAnimalBreed(String animalBreed) {
+        this.animalBreed = animalBreed;
     }
+
+    public ArrayList<String> getAnimals() {
+        return animals;
+    }
+
+    public void setAnimals(ArrayList<String> animals) {
+        this.animals = animals;
+    }
+    //endregion
 }
