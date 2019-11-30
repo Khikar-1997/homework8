@@ -5,39 +5,60 @@ import java.util.ArrayList;
 public class Main {
 
     public static void main(String[] args) {
-        Cat cat = new Cat();
-        cat.setAnimalBreed("Persian cat");
-        cat.setName(" - Smokey");
+        Hospital hospital = new Hospital();
+        hospital.setName("Muracan");
 
-        Cat cat2 = new Cat();
-        cat2.setAnimalBreed("Maikun");
-        cat2.setName(" - Lucky");
+        Director director = new Director();
+        director.setName("P. Poxosyan - ");
+        director.setAge(48);
 
-        Cat cat3 = new Cat();
-        cat3.setAnimalBreed("Siamese cat");
-        cat3.setName(" - Oreo");
+        Doctors doctor = new Doctors();
+        doctor.setName("G. Petrosyan - ");
+        doctor.setAge(36);
 
-        Cat cat4 = new Cat();
-        cat4.setAnimalBreed("Ragdoll");
-        cat4.setName(" - Patch");
 
-        Dog dog = new Dog();
-        dog.setAnimalBreed("Chau chau");
-        dog.setName(" - Archy");
+        Doctors doctor2 = new Doctors();
+        doctor2.setName("K. Grigoryan - ");
+        doctor2.setAge(45);
 
-        Dog dog2 = new Dog();
-        dog2.setAnimalBreed("Pitbul");
-        dog2.setName(" - Graf");
 
-        ArrayList<Animal> animals = new ArrayList<>();
-        animals.add(cat);
-        animals.add(cat2);
-        animals.add(cat3);
-        animals.add(cat4);
-        animals.add(dog);
-        animals.add(dog2);
-        for (int i = 0; i < animals.size(); i++) {
-            System.out.println(animals.get(i).getAnimalBreed() + animals.get(i).getName());
+        Doctors doctor3 = new Doctors();
+        doctor3.setName("H. Hambardzumyan - ");
+        doctor3.setAge(50);
+
+        Doctors doctor4 = new Doctors();
+        doctor4.setName("L. Harutyunyan - ");
+        doctor4.setAge(30);
+
+        Patients patient = new Patients();
+        patient.setName("Poxos - ");
+        patient.setAge(55);
+
+        Patients patient2 = new Patients();
+        patient2.setName("Petros - ");
+        patient2.setAge(48);
+
+        Patients patient3 = new Patients();
+        patient3.setName("Martiros - ");
+        patient3.setAge(17);
+
+        Patients patient4 = new Patients();
+        patient4.setName("Kirakos - ");
+        patient4.setAge(16);
+
+        ArrayList<Hospital> hospitalsProgram = new ArrayList<>();
+        hospitalsProgram.add(hospital);
+        hospitalsProgram.add(director);
+        hospitalsProgram.add(doctor);
+        hospitalsProgram.add(doctor2);
+        hospitalsProgram.add(doctor3);
+        hospitalsProgram.add(doctor4);
+        hospitalsProgram.add(patient);
+        hospitalsProgram.add(patient2);
+        hospitalsProgram.add(patient3);
+        hospitalsProgram.add(patient4);
+        for (int i = 0; i < hospitalsProgram.size(); i++) {
+            System.out.println(hospitalsProgram.get(i).getName() + hospitalsProgram.get(i).getAge());
         }
     }
 }
