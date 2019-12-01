@@ -46,19 +46,32 @@ public class Main {
         patient4.setName("Kirakos - ");
         patient4.setAge(16);
 
-        ArrayList<Hospital> hospitalsProgram = new ArrayList<>();
-        hospitalsProgram.add(hospital);
-        hospitalsProgram.add(director);
-        hospitalsProgram.add(doctor);
-        hospitalsProgram.add(doctor2);
-        hospitalsProgram.add(doctor3);
-        hospitalsProgram.add(doctor4);
-        hospitalsProgram.add(patient);
-        hospitalsProgram.add(patient2);
-        hospitalsProgram.add(patient3);
-        hospitalsProgram.add(patient4);
-        for (int i = 0; i < hospitalsProgram.size(); i++) {
-            System.out.println(hospitalsProgram.get(i).getName() + hospitalsProgram.get(i).getAge());
+        ArrayList<Hospital> hospitals = new ArrayList<>();
+        hospitals.add(hospital);
+        ArrayList<Human> directors = new ArrayList<>();
+        directors.add(director);
+        ArrayList<Human> doctors = new ArrayList<>();
+        doctors.add(doctor);
+        doctors.add(doctor2);
+        doctors.add(doctor3);
+        doctors.add(doctor4);
+        ArrayList<Human> patients = new ArrayList<>();
+        patients.add(patient);
+        patients.add(patient2);
+        patients.add(patient3);
+        patients.add(patient4);
+
+        for (Hospital element : hospitals) {
+            System.out.println("Hospital - " + element.getName());
+        }
+        for (Human item : directors) {
+            System.out.println("Director - " + item.getName() + item.getAge());
+        }
+        for (Human value : doctors) {
+            System.out.println("Doctors - " + value.getName() + value.getAge());
+        }
+        for (Human human : patients) {
+            System.out.println("Patients - " + human.getName() + human.getAge());
         }
     }
 }

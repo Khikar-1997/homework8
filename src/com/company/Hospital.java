@@ -4,14 +4,7 @@ import java.util.ArrayList;
 
 public class Hospital {
     private String name;
-    private int age;
-    ArrayList<Hospital> hospitalsProgram;
-
-    public Hospital(String name, int age, ArrayList<Hospital> hospitalsProgram) {
-        this.name = name;
-        this.age = age;
-        this.hospitalsProgram = hospitalsProgram;
-    }
+    ArrayList<Hospital>hospitalsProgram;
 
     public Hospital(String name, ArrayList<Hospital> hospitalsProgram) {
         this.name = name;
@@ -19,15 +12,6 @@ public class Hospital {
     }
 
     public Hospital() {
-    }
-
-    //region Getter and setter
-    public ArrayList<Hospital> getHospitalsProgram() {
-        return hospitalsProgram;
-    }
-
-    public void setHospitalsProgram(ArrayList<Hospital> hospitalsProgram) {
-        this.hospitalsProgram = hospitalsProgram;
     }
 
     public String getName() {
@@ -38,12 +22,11 @@ public class Hospital {
         this.name = name;
     }
 
-    public int getAge() {
-        return age;
+    public ArrayList<Hospital> getHospitalsProgram() {
+        return hospitalsProgram;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setHospitalsProgram(ArrayList<Hospital> hospitalsProgram) {
+        this.hospitalsProgram = hospitalsProgram;
     }
-    //endregion
 }
